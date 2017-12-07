@@ -7,10 +7,7 @@ import org.mindrot.jbcrypt.BCrypt;
  */
 
 class Encrypt {
-    private int Pin;
 
-    // Main stringbuilder being used for all the string operations in this class
-    StringBuilder enc = new StringBuilder();
 
     private Boolean isDate = false;
 
@@ -20,12 +17,12 @@ class Encrypt {
     private int colorYear;
     private int colorFirstName;
     private int colorSecondName;
+
+    // Other Information to be put in
     private String uniqueId;
+    private int Pin;
     private int sumFirstName;
     private int sumSecondName;
-    // name object reference for sum of first and second name
-    Name n = new Name();
-
 
     //IF INPUT IS DATE OF BIRTH
     String encryptDOB(String genPassword, int Date, int Month, int Year, int colorDate, int colorMonth, int colorYear, int pin, String parsedId) {
@@ -77,8 +74,8 @@ class Encrypt {
     String encryptName(String genPassword, int sumFirstName,int sumSecondName, int firstNameChoice, int secondNameChoice, int pin, String parsedId) {
 
         // Setting up uniqueIdentifier and Pin
-        this.uniqueId = pin;
-        this.Pin = parsedId;
+        this.uniqueId = parsedId;
+        this.Pin = pin;
 
         // Getting Pin Object
         ThePin get = new ThePin(Pin);

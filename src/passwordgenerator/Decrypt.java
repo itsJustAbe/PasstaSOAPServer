@@ -4,17 +4,19 @@ package passwordgenerator;
  * Created by t848 on 20-Jul-16.
  */
 class Decrypt {
+    int pin;
+
     private String UserId;
     private ThePin get = new ThePin(Passgen.USER_PIN);
-    private  int color1;
-    private  int color2;
-    private  int color3;
+    private int color1;
+    private int color2;
+    private int color3;
     //REMOVE COLOR FROM THE ENCRYPTED PASSWORD
-    private  String Year;
-    private  String Date;
-    private  String Month;
-    private  String Name;
-    private  String Name1;
+    private String Year;
+    private String Date;
+    private String Month;
+    private String Name;
+    private String Name1;
 
     //IF INPUT IS NAME
     public void reverseName(StringBuilder x, int pin) {
@@ -82,7 +84,7 @@ class Decrypt {
         temp.append(epass.charAt(get.loc1));
         epass.deleteCharAt(get.loc1);
 
-       Date = String.valueOf(temp.reverse());
+        Date = String.valueOf(temp.reverse());
 
     }
 
@@ -90,21 +92,21 @@ class Decrypt {
         int parsedColor = 5;
 
         switch (c) {
-        case "00bfa5":
-            parsedColor = 1;
-            break;
+            case "00bfa5":
+                parsedColor = 1;
+                break;
 
-        case "ffd180":
-            parsedColor = 2;
-            break;
+            case "ffd180":
+                parsedColor = 2;
+                break;
 
-        case "e13352":
-            parsedColor = 3;
-            break;
+            case "e13352":
+                parsedColor = 3;
+                break;
 
-        case "00b3c9":
-            parsedColor = 4;
-            break;
+            case "00b3c9":
+                parsedColor = 4;
+                break;
         }
 
         return parsedColor;
@@ -239,7 +241,8 @@ class Decrypt {
     int getYear() {
         return Integer.parseInt(String.valueOf(Year));
     }
-    String getUserId(){
+
+    String getUserId() {
         return UserId;
     }
 

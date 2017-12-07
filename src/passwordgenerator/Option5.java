@@ -7,9 +7,10 @@ import java.util.Objects;
 
 public class Option5 {
 
+
     // FOR DOB
     public String genWord(int input) { // Process to generate word
-
+        // Passgen object to get the USERID
         StringBuilder word = new StringBuilder("");// The word chosen
 
         // Special condition for year
@@ -21,10 +22,9 @@ public class Option5 {
         for (int i = 0; i < ones_encoder(input).length(); i++) word.append(ones_encoder(input).charAt(i));
 
         // Need a better identifier as we will be working on a website not on android
-        String IMEI = Passgen.PARSED_USER_ID;//
-
+        String UserID =  Passgen.PARSED_USER_ID;
         // Process to change one letter as capital
-        int whereToChange = getTheDigit(IMEI, word);
+        int whereToChange = getTheDigit(UserID, word);
 
         // Getting the character to which it has to change
         char pos = word.charAt(whereToChange);
@@ -49,7 +49,6 @@ public class Option5 {
 
         String PartOfName = partOfName(name);// NAME WILL CONTAIN THE INPUT AFTERWARDS , SHIVAM IS USED AS A TEST CASE
 
-        //String IMEI = "492872346603191";// IMEI EXAMPLE
         word = addLastChar(word,x);
         String PartOfWord = partOfName(new String(word));// SEARCHING FOR THE PART TO BE Changed
 

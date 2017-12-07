@@ -27,6 +27,7 @@ public class Passgen {
     Name name = new Name();
     // Password decryptor
     Decrypt decrypter = new Decrypt();
+
     // Encryption class duh
     Encrypt encrypt = new Encrypt();
 
@@ -45,8 +46,8 @@ public class Passgen {
     private int sumOfSecondName;
 
     // Data to be used by Decrypt and Encrypt
-    String PARSED_USER_ID;
-    int USER_PIN;
+     static String PARSED_USER_ID;
+     static int USER_PIN;
 
     // Sample  ofunique identfier recived from database
     private String USER_UNIQUE_MODIFIER = "5a281b2388a7675aed00fb55";
@@ -57,6 +58,7 @@ public class Passgen {
 
     // Dycrypting the password
     private void decrypt() {
+
 
         decrypter.reverseDOB(new StringBuilder(encryptedPassword));
 
@@ -241,6 +243,7 @@ public class Passgen {
 
     }
 
+
     public Procedure encryptPassword(User userInfo, String service) {// MAIN FUNCTION
         // Update values
         updateValues(userInfo, service);
@@ -254,6 +257,10 @@ public class Passgen {
         procedure.setOwner(userInfo.getUserID());
         procedure.setProcedure(this.encryptedPassword);
 
+        // Flushing values
+        PARSED_USER_ID = null;
+        USER_PIN = 0;
+
         return procedure;
     }
 
@@ -266,5 +273,11 @@ public class Passgen {
         
         }*/
 
+        public String getUserID(){
+            return PARSED_USER_ID;
+    }
+        public int getPin(){
+            return USER_PIN;
+    }
 
 }

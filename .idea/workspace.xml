@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e5575e-4a10-41b4-8166-ffc7c0242d24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Check.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Check.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Decrypt.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Decrypt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Encrypt.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Encrypt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Name.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Name.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Option5.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Option5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Passgen.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Passgen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/soapserver/ServerImplement.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/soapserver/ServerImplement.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClientTest.java" afterPath="$PROJECT_DIR$/src/ClientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Check.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Check.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Decrypt.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Decrypt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Encrypt.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Encrypt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Name.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Name.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Option5.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Option5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soapserver/ServerImplement.java" afterPath="$PROJECT_DIR$/src/soapserver/ServerImplement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +32,10 @@
       <file leaf-file-name="Passgen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Passgen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2750">
-              <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            <state relative-caret-position="648">
+              <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
               <folding>
-                <marker date="1512685652227" expanded="false" signature="26:48" ph="/.../" />
+                <marker date="1512688732527" expanded="false" signature="26:48" ph="/.../" />
               </folding>
             </state>
           </provider>
@@ -62,9 +59,10 @@
         <option value="$PROJECT_DIR$/src/pojo/Password.java" />
         <option value="$PROJECT_DIR$/src/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/soapserver/ServerImplement.java" />
-        <option value="$PROJECT_DIR$/src/passwordgenerator/Decrypt.java" />
-        <option value="$PROJECT_DIR$/src/passwordgenerator/Encrypt.java" />
         <option value="$PROJECT_DIR$/src/passwordgenerator/Name.java" />
+        <option value="$PROJECT_DIR$/src/passwordgenerator/Encrypt.java" />
+        <option value="$PROJECT_DIR$/src/passwordgenerator/Decrypt.java" />
+        <option value="$PROJECT_DIR$/src/passwordgenerator/Option5.java" />
         <option value="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
       </list>
     </option>
@@ -285,7 +283,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5530381" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78166837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -294,7 +292,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -316,36 +314,37 @@
         <state relative-caret-position="5772">
           <caret line="227" column="50" lean-forward="true" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
           <folding>
-            <marker date="1512684083685" expanded="true" signature="28:68" ph="/**...*/" />
-            <marker date="1512684083685" expanded="true" signature="499:778" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="849:1203" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="1260:1739" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="1797:2109" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2166:2475" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2514:2898" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2951:3282" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="3340:3987" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="4045:4690" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="4748:5390" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="5446:6828" ph="{...}" />
-            <marker date="1512684083685" expanded="false" signature="6847:6858" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="6888:6894" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="6914:6925" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="6956:6962" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="6981:6992" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7038:7044" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7067:7077" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7091:7097" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7120:7131" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7143:7149" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7172:7183" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7196:7202" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7223:7234" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7248:7254" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7275:7286" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7300:7306" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7327:7338" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7352:7358" ph=" }" />
+            <marker date="1512688647464" expanded="true" signature="28:68" ph="/**...*/" />
+            <marker date="1512688647464" expanded="true" signature="505:784" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="855:1209" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="1266:1745" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="1803:2115" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="2172:2482" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="2521:2953" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="3006:3337" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="3395:4042" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="4100:4745" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="4803:5445" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="5501:6883" ph="{...}" />
+            <marker date="1512688647464" expanded="false" signature="6902:6913" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="6943:6949" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="6969:6980" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7011:7017" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7036:7047" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7093:7099" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7123:7134" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7124:7134" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7148:7154" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7177:7188" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7200:7206" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7229:7240" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7253:7259" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7280:7291" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7305:7311" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7332:7343" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7357:7363" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7384:7395" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7409:7415" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -510,45 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Decrypt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <marker date="1512684083685" expanded="true" signature="28:68" ph="/**...*/" />
-            <marker date="1512684083685" expanded="true" signature="499:778" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="849:1203" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="1260:1739" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="1797:2109" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2166:2475" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2514:2898" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="2951:3282" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="3340:3987" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="4045:4690" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="4748:5390" ph="{...}" />
-            <marker date="1512684083685" expanded="true" signature="5446:6828" ph="{...}" />
-            <marker date="1512684083685" expanded="false" signature="6847:6858" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="6888:6894" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="6914:6925" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="6956:6962" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="6981:6992" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7038:7044" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7067:7077" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7091:7097" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7120:7131" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7143:7149" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7172:7183" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7196:7202" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7223:7234" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7248:7254" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7275:7286" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7300:7306" ph=" }" />
-            <marker date="1512684083685" expanded="false" signature="7327:7338" ph=" { " />
-            <marker date="1512684083685" expanded="false" signature="7352:7358" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Dob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -558,28 +518,6 @@
             <marker date="1512671619448" expanded="true" signature="254:748" ph="{...}" />
             <marker date="1512671619448" expanded="true" signature="784:847" ph="{...}" />
             <marker date="1512671619448" expanded="true" signature="950:1576" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Encrypt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3562">
-          <caret line="137" column="57" lean-forward="true" selection-start-line="137" selection-start-column="57" selection-end-line="137" selection-end-column="57" />
-          <folding>
-            <marker date="1512685041382" expanded="true" signature="64:104" ph="/**...*/" />
-            <marker date="1512685041382" expanded="true" signature="824:2082" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="1350:1424" ph="//..." />
-            <marker date="1512685041382" expanded="true" signature="2231:3554" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="3133:3216" ph="//..." />
-            <marker date="1512685041382" expanded="true" signature="3640:3936" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="3981:4282" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="4108:4282" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="4432:4709" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="4804:5246" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="5339:5661" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="5778:6665" ph="{...}" />
-            <marker date="1512685041382" expanded="true" signature="6757:9539" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -600,21 +538,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Option5.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Switch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        <state relative-caret-position="26">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <marker date="1512671619496" expanded="true" signature="255:1066" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="1162:1983" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="2100:2629" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="2701:4966" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="5051:6923" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="7063:8037" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="8146:8955" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="9075:9303" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="9370:11067" ph="{...}" />
-            <marker date="1512671619496" expanded="true" signature="11142:13126" ph="{...}" />
+            <marker date="1512671619426" expanded="true" signature="28:68" ph="/**...*/" />
+            <marker date="1512671619426" expanded="true" signature="186:288" ph="{...}" />
+            <marker date="1512671619426" expanded="false" signature="381:392" ph=" { " />
+            <marker date="1512671619426" expanded="false" signature="424:430" ph=" }" />
+            <marker date="1512671619426" expanded="false" signature="528:539" ph=" { " />
+            <marker date="1512671619426" expanded="false" signature="569:575" ph=" }" />
+            <marker date="1512671619426" expanded="true" signature="678:1764" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Encrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <marker date="1512687603515" expanded="true" signature="64:104" ph="/**...*/" />
+            <marker date="1512687603515" expanded="true" signature="675:1906" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="1174:1248" ph="//..." />
+            <marker date="1512687603515" expanded="true" signature="2081:3377" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="2187:3377" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="2956:3039" ph="//..." />
+            <marker date="1512687603515" expanded="true" signature="3463:3759" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="3804:4105" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="3931:4105" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="4255:4532" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="4627:5069" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="5162:5484" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="5601:6488" ph="{...}" />
+            <marker date="1512687603515" expanded="true" signature="6580:9362" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -645,28 +603,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Switch.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Decrypt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1512671619426" expanded="true" signature="28:68" ph="/**...*/" />
-            <marker date="1512671619426" expanded="true" signature="186:288" ph="{...}" />
-            <marker date="1512671619426" expanded="false" signature="381:392" ph=" { " />
-            <marker date="1512671619426" expanded="false" signature="424:430" ph=" }" />
-            <marker date="1512671619426" expanded="false" signature="528:539" ph=" { " />
-            <marker date="1512671619426" expanded="false" signature="569:575" ph=" }" />
-            <marker date="1512671619426" expanded="true" signature="678:1764" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="28:68" ph="/**...*/" />
+            <marker date="1512688647464" expanded="true" signature="505:784" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="855:1209" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="1266:1745" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="1803:2115" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="2172:2482" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="2521:2953" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="3006:3337" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="3395:4042" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="4100:4745" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="4803:5445" ph="{...}" />
+            <marker date="1512688647464" expanded="true" signature="5501:6883" ph="{...}" />
+            <marker date="1512688647464" expanded="false" signature="6902:6913" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="6943:6949" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="6969:6980" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7011:7017" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7036:7047" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7093:7099" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7123:7134" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7124:7134" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7148:7154" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7177:7188" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7200:7206" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7229:7240" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7253:7259" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7280:7291" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7305:7311" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7332:7343" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7357:7363" ph=" }" />
+            <marker date="1512688647464" expanded="false" signature="7384:7395" ph=" { " />
+            <marker date="1512688647464" expanded="false" signature="7409:7415" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Option5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <marker date="1512688677209" expanded="true" signature="256:1112" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="258:329" ph="//..." />
+            <marker date="1512688677209" expanded="true" signature="852:1112" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="1208:1971" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="2088:2617" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="2689:4954" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="5039:6911" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="7051:8025" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="8134:8943" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="9063:9291" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="9358:11055" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="11130:13114" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Passgen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2750">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        <state relative-caret-position="648">
+          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
           <folding>
-            <marker date="1512685652227" expanded="false" signature="26:48" ph="/.../" />
+            <marker date="1512688732527" expanded="false" signature="26:48" ph="/.../" />
           </folding>
         </state>
       </provider>
