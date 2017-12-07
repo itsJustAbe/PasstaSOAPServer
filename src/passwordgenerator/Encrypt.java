@@ -21,17 +21,18 @@ class Encrypt {
     private int colorFirstName;
     private int colorSecondName;
     private String uniqueId;
-
+    private int sumFirstName;
+    private int sumSecondName;
     // name object reference for sum of first and second name
     Name n = new Name();
 
 
     //IF INPUT IS DATE OF BIRTH
-    String encryptDOB(String genPassword, int Date, int Month, int Year, int colorDate, int colorMonth, int colorYear) {
+    String encryptDOB(String genPassword, int Date, int Month, int Year, int colorDate, int colorMonth, int colorYear, int pin, String parsedId) {
 
         // Setting up uniqueIdentifier and Pin
-        this.uniqueId = Passgen.PARSED_USER_ID;
-        this.Pin = Passgen.USER_PIN;
+        this.uniqueId = parsedId;
+        this.Pin = pin;
 
         // Setting DOB true
         isDate = true;
@@ -73,16 +74,18 @@ class Encrypt {
 
     //IF INPUT IS NAME
 
-    String encryptName(String genPassword, int firstNameChoice, int secondNameChoice) {
+    String encryptName(String genPassword, int sumFirstName,int sumSecondName, int firstNameChoice, int secondNameChoice, int pin, String parsedId) {
 
         // Setting up uniqueIdentifier and Pin
-        this.uniqueId = Passgen.PARSED_USER_ID;
-        this.Pin = Passgen.USER_PIN;
+        this.uniqueId = pin;
+        this.Pin = parsedId;
 
         // Getting Pin Object
         ThePin get = new ThePin(Pin);
 
         // Adding values recivedd from main  method
+        this.sumFirstName = sumFirstName;
+        this.sumSecondName = sumSecondName;
         this.colorFirstName = firstNameChoice;
         this.colorSecondName = secondNameChoice;
         get.location();
@@ -118,19 +121,19 @@ class Encrypt {
     private void addName(StringBuilder x) {
         ThePin get = new ThePin(Pin);
 
-        StringBuilder sumFirstName = new StringBuilder(String.valueOf(n.getSumOfFirstName()));
-        x.insert(get.loc9, sumFirstName.charAt(0));
-        x.insert(get.loc7, sumFirstName.charAt(1));
-        x.insert(get.loc5, sumFirstName.charAt(2));
+        StringBuilder sumOfFirstName = new StringBuilder(String.valueOf(sumFirstName));
+        x.insert(get.loc9, sumOfFirstName.charAt(0));
+        x.insert(get.loc7, sumOfFirstName.charAt(1));
+        x.insert(get.loc5, sumOfFirstName.charAt(2));
     }
 
     private void addName1(StringBuilder x) {
         ThePin get = new ThePin(Pin);
 
-        StringBuilder sumSecondName = new StringBuilder(String.valueOf(n.getSumOfSecondName()));
-        x.insert(get.loc1, sumSecondName.charAt(0));
-        x.insert(get.loc9, sumSecondName.charAt(1));
-        x.insert(get.loc7, sumSecondName.charAt(2));
+        StringBuilder sumOfSecondName = new StringBuilder(String.valueOf(sumSecondName));
+        x.insert(get.loc1, sumOfSecondName.charAt(0));
+        x.insert(get.loc9, sumOfSecondName.charAt(1));
+        x.insert(get.loc7, sumOfSecondName.charAt(2));
     }
     // NAME PROCESS OF ADDING BITS TO THE HASHED PASSWORD
 

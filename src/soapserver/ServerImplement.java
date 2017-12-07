@@ -9,22 +9,28 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Endpoint;
 
+
 @WebService(name= "PasswordGenerationServer", serviceName = "PasswordGenerationServer")
 @SOAPBinding(style = SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
 public class ServerImplement implements PasswordGenerationServer {
 
+    private static final String address ="http://localhost:9000/PasswordService/server";
+    Passgen passgen = new Passgen();
+
+
     public static void main(String args[]) throws Exception {
-        Endpoint.publish("http://localhost:9000/PasswordService/server", new ServerImplement());
+        Endpoint.publish(address, new ServerImplement());
     }
 
     @Override
     public Procedure getProcedure(String service, User userInfo) {
-        return (new Passgen()).start("encrypt", userInfo, service);
+        return passgen.encryptPassword(userInfo, service);
 
     }
 
     @Override
     public Password getPassword(Procedure procedure) {
-        return (new Passgen()).decrypt(procedure);
+
+        return passgen.decryptPassword(procedure);
     }
 }

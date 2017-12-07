@@ -18,15 +18,19 @@ public class Passgen {
     private final int MIN_RANGE_PIN = 0;
 
     // Getting all the objects
+    
+    // Date of birth object for generating password using date of birth
     Dob dob = new Dob();
+    // Password checking class
     Check check = new Check();
+    // Generation of password using Name
     Name name = new Name();
+    // Password decryptor
     Decrypt decrypter = new Decrypt();
-
-    //Long third = new Long();
+    // Encryption class duh
     Encrypt encrypt = new Encrypt();
 
-    // Test DATA
+   // Storing data being used for creation of password
     private int USER_DATE;
     private int USER_MONTH;
     private int USER_YEAR;
@@ -37,10 +41,12 @@ public class Passgen {
     private String USER_SECOND;
     private int USER_CHOICE_1 = 1;
     private int USER_CHOICE_2 = 4;
+    private int sumOfFirstName;
+    private int sumOfSecondName;
 
     // Data to be used by Decrypt and Encrypt
-    static String PARSED_USER_ID;
-    static int USER_PIN;
+    String PARSED_USER_ID;
+    int USER_PIN;
 
     // Sample  ofunique identfier recived from database
     private String USER_UNIQUE_MODIFIER = "5a281b2388a7675aed00fb55";
@@ -92,6 +98,7 @@ public class Passgen {
         passwordDob = dob.getPassword(USER_DATE, USER_MONTH, USER_YEAR, USER_CHOICE_DATE, USER_CHOICE_MONTH,
                 USER_CHOICE_YEAR);
 
+
         return passwordDob;
 
     }
@@ -124,6 +131,9 @@ public class Passgen {
 
         // Create password using Name
         passwordName = name.getPassword(USER_FIRST, USER_SECOND, USER_CHOICE_1, USER_CHOICE_2);
+
+        sumOfFirstName = name.getSumOfFirstName();
+        sumOfSecondName = name.getSumOfSecondName();
 
         return passwordName;
     }
@@ -171,14 +181,15 @@ public class Passgen {
 
         // Generate using name
         //name = generateUsingName();
-        name = "password";
+        name = generateUsingName();
 
         // Check strength of both
         strengthName = check.strength(name);
         strengthDob = check.strength(dob);
 
         if (strengthName > strengthDob) { // encrypt
-            encryptedPassword = encrypt.encryptName(name, USER_CHOICE_1, USER_CHOICE_2);
+            encryptedPassword = encrypt.encryptName(name, sumOfFirstName,sumOfSecondName, USER_CHOICE_1, USER_CHOICE_2, 
+                    USER_PIN, PARSED_USER_ID);
             Password = name;
             System.out.println("Generated pojo.Password = " + name);
             System.out.println("Encrypted NAME password  = " + encryptedPassword);
@@ -191,7 +202,7 @@ public class Passgen {
             generatePassword();
         } else { // Encrypt DOb
             encryptedPassword = encrypt.encryptDOB(dob, USER_DATE, USER_MONTH, USER_YEAR, USER_CHOICE_DATE,
-                    USER_CHOICE_MONTH, USER_CHOICE_YEAR);
+                    USER_CHOICE_MONTH, USER_CHOICE_YEAR, USER_PIN,PARSED_USER_ID);
             Password = dob;
             System.out.println("Generated pojo.Password = " + dob);
             System.out.println("Encrypted DOB password  = " + encryptedPassword);
@@ -203,7 +214,7 @@ public class Passgen {
 
     }
 
-    public Password decrypt(Procedure procedure) {
+    public Password decryptPassword(Procedure procedure) {
         // parse the acquired user ID
         uniqueIdParser();
 
@@ -230,7 +241,7 @@ public class Passgen {
 
     }
 
-    public Procedure start(String a, User userInfo, String service) {// MAIN FUNCTION
+    public Procedure encryptPassword(User userInfo, String service) {// MAIN FUNCTION
         // Update values
         updateValues(userInfo, service);
         // parse the acquired user ID

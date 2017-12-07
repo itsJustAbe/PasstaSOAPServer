@@ -4,7 +4,7 @@ package passwordgenerator;
  * Created by t848 on 17-Feb-16.
  */
 public class Check {
-    static int score;
+    int score;
     int length, num = 0;
     char[] p;
 

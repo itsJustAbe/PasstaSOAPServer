@@ -23,8 +23,6 @@ public class ClientTest {
             User user = new User();
             Password pass = new Password();
 
-
-
             user.setFirstName("shivam");
             user.setLastName("sachdeva");
             user.setUserID("5a281b2388a7675aed00fb55");
@@ -33,9 +31,6 @@ public class ClientTest {
             user.setGender("male");
             String serviceName = "www.facebook.com";
 
-
-            //pass.setPassword("$00552a$101000$23O0f/b0a00JbC84f1vwR35VjGa1RnKAKTS" +
-                    //"2eHxhqq2kW.WQU41oAH2xif79111db9c9sWDz5mff5Q67y92a$11f888302$3f9Z3uf.Fg7Hk309");
 
             procedure = passwordService.getProcedure(serviceName, user);
 

@@ -10,9 +10,8 @@ public class Name {
     // For processing 
     String SUM, SUM1;
      private String pass;
-     private static int sumOfFirstName,sumOfSecondName;
-     String com;
-     
+     private int sumOfFirstName;
+     private int sumOfSecondName;
      // Values to test the program
      private String first="";
      private String second="";
@@ -20,7 +19,6 @@ public class Name {
 
      // Operations on the string to be performed
      private void operations() {
-
 
          // Store pojo.User's name's length
         int lengthFirstname, lengthSecondName;
