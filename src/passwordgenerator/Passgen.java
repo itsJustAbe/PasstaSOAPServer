@@ -181,7 +181,7 @@ public class Passgen {
 
         // Generate using name
         //name = generateUsingName();
-        name = generateUsingName();
+        name = "disabled name for now";
 
         // Check strength of both
         strengthName = check.strength(name);
