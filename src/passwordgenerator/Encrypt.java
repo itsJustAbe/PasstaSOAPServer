@@ -139,10 +139,16 @@ class Encrypt {
         ThePin get = new ThePin(Pin);
 
         System.out.println("date = " + d);
-        StringBuilder date = new StringBuilder(String.valueOf(d));//SAMPLE DATE
-        //LOCATIONS
-        x.insert(get.loc1, date.charAt(0));
-        x.insert(get.loc2, date.charAt(1));
+        if (d < 10) {
+            StringBuilder date = new StringBuilder(0 + String.valueOf(d));//SAMPLE MONTH
+            //LOCATIONS
+            x.insert(get.loc1, date.charAt(0));
+            x.insert(get.loc2, date.charAt(1));
+        } else {
+            StringBuilder date = new StringBuilder(String.valueOf(d));//SAMPLE MONTH
+            x.insert(get.loc1, date.charAt(0));
+            x.insert(get.loc2, date.charAt(1));
+        }
     }
 
     // ADDING MONTH TO THE HASHED PASSWORD
@@ -157,6 +163,7 @@ class Encrypt {
         } else {
             StringBuilder month = new StringBuilder(String.valueOf(m));//SAMPLE MONTH
             x.insert(get.loc3, month.charAt(0));
+            x.insert(get.loc4, month.charAt(1));
         }
     }
 
