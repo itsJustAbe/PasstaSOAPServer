@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e5575e-4a10-41b4-8166-ffc7c0242d24" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Option5.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Option5.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Name.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Name.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
