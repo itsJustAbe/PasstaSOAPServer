@@ -10,7 +10,9 @@ import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Endpoint;
 
 
-@WebService(name= "PasswordGenerationServer", serviceName = "PasswordGenerationServer")
+@WebService(name= "PasswordGenerationServer",
+        serviceName = "PasswordGenerationServer",
+        targetNamespace = "http://soapservice" )
 @SOAPBinding(style = SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
 public class ServerImplement implements PasswordGenerationServer {
 
