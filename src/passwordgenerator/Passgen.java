@@ -34,9 +34,9 @@ public class Passgen {
     private int USER_DATE;
     private int USER_MONTH;
     private int USER_YEAR;
-    private int USER_CHOICE_DATE = 1;
-    private int USER_CHOICE_MONTH = 2;
-    private int USER_CHOICE_YEAR = 4;
+    private int USER_CHOICE_DATE;
+    private int USER_CHOICE_MONTH;
+    private int USER_CHOICE_YEAR;
     private String USER_FIRST;
     private String USER_SECOND;
     private int USER_CHOICE_1 = 1;
@@ -132,6 +132,66 @@ public class Passgen {
         }
 
         return temp;
+    }
+    
+    private void choiceSelector(String first) {
+        // Store pojo.User's name's length
+        String temp;
+        int sum = 0;
+        int[] pick;
+        int lengthOfServiceName;
+        char mod[];
+
+        // length of the service name
+        lengthOfServiceName = first.length();
+
+        // Converting service name to char array to sum all the characters
+        mod = first.toCharArray();
+
+        // Summing up the service name
+        for (int i = 0; i < lengthOfServiceName; i++)
+            sum += mod[i];
+
+            // conversion to string for other operations
+        temp = String.valueOf(sum);
+
+        // Padding process
+        if (temp.length() < 4 && temp.length() == 3) {
+            temp = temp + "9";
+        } else if (temp.length() < 4 && temp.length() == 2) {
+            temp = temp + " 99 ";
+        } else if (temp.length() < 4 && temp.length() == 1) {
+            temp = temp + "999";
+        }
+
+        // getting parsed digits for choice
+        pick = chooseOne(temp);
+
+        // Updating values
+        USER_CHOICE_DATE = pick[0];
+        USER_CHOICE_MONTH = pick [1];
+        USER_CHOICE_YEAR = pick [2];
+
+    }
+
+    private int[] chooseOne(String temp){
+        int[] returnBack = new int[4];
+
+        // Dirty way to do parse 
+        for(int i = 0; i < 4 ; i++) {
+         
+            returnBack[i] = Integer.valueOf(String.valueOf(temp.charAt(i)));
+          
+            // if greater than 4 then divide by 2 
+            if (returnBack[i] > 4)              
+                returnBack[i] = returnBack[i] / 2;
+          
+                // if 0 convert it to 1
+            else if(returnBack[i] == 0 ) 
+                        returnBack[i] = 1;
+        }
+        
+        return returnBack;
     }
 
     // this method update global variables values once all the data is received 
@@ -269,6 +329,8 @@ public class Passgen {
         updateValues(userInfo, service);
         // parse the acquired user ID
         uniqueIdParser();
+        // Parse choices
+        choiceSelector(service);
         // pojo.Procedure to generate password for Dob
         generatePassword();
 
