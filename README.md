@@ -2,7 +2,7 @@
 SOAP SERVER 
 
 ## Dependencies
-It is necessary to import the library ´lib/jbcrypt-0.3m.jar´ before compiling.
+It is necessary to import the library `lib/jbcrypt-0.3m.jar` before compiling.
 
 ## How to set the service up
 The server endpoint can be run `/PasstaSOAPServer/soapserver/ServerImplement.class`
