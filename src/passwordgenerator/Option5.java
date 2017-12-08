@@ -2,9 +2,6 @@ package passwordgenerator;
 
 import java.util.Objects;
 
-// Last character's error to be checked and configured, all done except that GfuckingG
-// Error at 199 and hundred's place
-
 public class Option5 {
 
 
@@ -22,7 +19,7 @@ public class Option5 {
         for (int i = 0; i < ones_encoder(input).length(); i++) word.append(ones_encoder(input).charAt(i));
 
         // Need a better identifier as we will be working on a website not on android
-        String UserID =  Passgen.PARSED_USER_ID;
+        String UserID = Passgen.PARSED_USER_ID;
         // Process to change one letter as capital
         int whereToChange = getTheDigit(UserID, word);
 
@@ -42,19 +39,19 @@ public class Option5 {
         StringBuilder word = new StringBuilder("");// The word chosen
 
         // If the number is a pure 100 number eg 100,200, then use this method
-        if(x%100==0) word.append(hundreds_encoder(x));
+        if (x % 100 == 0) word.append(hundreds_encoder(x));
 
             // Else continue normal procedure
         else for (int i = 0; i < ones_encoder(x).length(); i++) word.append(ones_encoder(x).charAt(i));
 
         String PartOfName = partOfName(name);// NAME WILL CONTAIN THE INPUT AFTERWARDS , SHIVAM IS USED AS A TEST CASE
 
-        word = addLastChar(word,x);
+        word = addLastChar(word, x);
         String PartOfWord = partOfName(new String(word));// SEARCHING FOR THE PART TO BE Changed
 
         word = replacePart(word, PartOfWord, PartOfName);
 
-        System.out.println("after adding = "+word);
+        System.out.println("after adding = " + word);
 
         return new String(word);
     }
@@ -76,7 +73,7 @@ public class Option5 {
             } while (digit > length);
         }
 
-        return digit-1;
+        return digit - 1;
 
     }
 
@@ -155,15 +152,16 @@ public class Option5 {
         tens_encoder(enCode, x);
         return String.valueOf(enCode);
     }
+
     // HANDLING THE TENS PLACE
-    private void tens_encoder(StringBuilder s, int b){
+    private void tens_encoder(StringBuilder s, int b) {
         //checking  if the number comes from Name
-        if(b>100) b = b%100;
+        if (b > 100) b = b % 100;
 
         // Adding 2 characters if the tens place is 0 (fixed on 22 Jan,17)
-        if (b/10==0) s.append("ah");
-        else{
-            int  multiple = b / 10;
+        if (b / 10 == 0) s.append("ah");
+        else {
+            int multiple = b / 10;
             multiple = multiple % 10;
             switch (multiple) {
                 case 0:
@@ -203,23 +201,24 @@ public class Option5 {
                     break;
                 case 9:
                     if (b == 90) s.append("nabae");
-                    else if(b==99) s.append("nanwe");
+                    else if (b == 99) s.append("nanwe");
                     else s.append("anwe");
                     break;
                 case 10:
                     s.append("ssau");
                     break;
-            }}
+            }
+        }
     }
 
     //HANDLING PURE 100 CASES JUST 10 FROM 0-1000
 
     //HARDCODED SHIT YES ITS REQUIRED
-    private StringBuilder hundreds_encoder(int x){
+    private StringBuilder hundreds_encoder(int x) {
 
         StringBuilder enCode = new StringBuilder();
-        int c = x/100;
-        switch(c) {
+        int c = x / 100;
+        switch (c) {
             case 1:
                 enCode.append("ekhan");
                 break;
@@ -257,26 +256,24 @@ public class Option5 {
     }
 
 
-
-
     // FOR 3 DIGIT NUMBERS IE NAME CLASS
-    private StringBuilder addLastChar(StringBuilder word,int x){
+    private StringBuilder addLastChar(StringBuilder word, int x) {
 
-        char put ;// the chosen character goes here
-        char[] Consonant = {'b','c','d','g','j','k','l','m','n','p'};// LIST OF COSONANTS TO BE USED
-        char[] vowel = {'a','y','i','e','o','q','A','u','E','I'};// LIST OF VOWELS TO BE USED
+        char put;// the chosen character goes here
+        char[] Consonant = {'b', 'c', 'd', 'g', 'j', 'k', 'l', 'm', 'n', 'p'};// LIST OF COSONANTS TO BE USED
+        char[] vowel = {'a', 'y', 'i', 'e', 'o', 'q', 'A', 'u', 'E', 'I'};// LIST OF VOWELS TO BE USED
         int len = word.length();// LENGTH OF THE WORD
-        char c = word.charAt(len-1);
-        int f = x/100;
-        if     ((c == 'a')||// CHECKING CHARACTER IF ITS CONSONANT OR VOWEL TO PUT A CHARACTER ACCORDINGLY
+        char c = word.charAt(len - 1);
+        int f = x / 100;
+        if ((c == 'a') ||// CHECKING CHARACTER IF ITS CONSONANT OR VOWEL TO PUT A CHARACTER ACCORDINGLY
                 (c == 'o') ||
                 (c == 'u') ||
                 (c == 'i') ||
-                (c == 'e')){
+                (c == 'e')) {
 
             // Putting a consonant since there is a vowel as the last character in the generated word
             put = Consonant[f];
-        }else put = vowel[f];
+        } else put = vowel[f];
 
         word.append(put);
 
@@ -287,9 +284,9 @@ public class Option5 {
     private StringBuilder replacePart(StringBuilder word, String PartOfWord, String PartOfName) {
 
 
-        for (int i = 0; i < word.length()-2; i++) {
+        for (int i = 0; i < word.length() - 2; i++) {
             if (Objects.equals(word.substring(i, i + 3), PartOfWord)) {
-                word.replace(i,i+3,PartOfName);
+                word.replace(i, i + 3, PartOfName);
             }
         }
 
@@ -345,9 +342,9 @@ public class Option5 {
 
     //Name exclusive
     private int selectSub(int length, String[] sub) {
-        int selected=1 ;
+        int selected = 1;
 
-        for (int i = 0; i < length-2; i++) {
+        for (int i = 0; i < length - 2; i++) {
 
             if ((sub[i].charAt(0) != 'a') ||// CHECKING THE FIRST LETTER IF ITS A CONSONANT THEREFORE A NOT TRUE CONDITION
                     (sub[i].charAt(0) != 'A') ||
@@ -394,8 +391,6 @@ public class Option5 {
         }
         return selected;
     }
-
-
 
 
 }

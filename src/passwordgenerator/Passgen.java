@@ -57,14 +57,18 @@ public class Passgen {
     private void decrypt() {
 
 
+        // Decrypting password generating using DOB
         decrypter.reverseDOB(new StringBuilder(encryptedPassword));
 
+        // Update values recieved after decrypting 
         DecrypterUpdateValues();
-
+        
+        // Generate a new DOB password using the new values provided
         generateUsingDob();
 
     }
-
+    
+    // updates the values of global variables after decrypting
     private void DecrypterUpdateValues() {
 
         USER_DATE = decrypter.getDate();
@@ -130,6 +134,7 @@ public class Passgen {
         return temp;
     }
 
+    // this method update global variables values once all the data is received 
     private void updateValues(User info, String service) {
 
         // Calender Object to translate Date of birth
@@ -138,15 +143,9 @@ public class Passgen {
 
         // Update Values
         USER_DATE = calObject.get(Calendar.DAY_OF_MONTH);
-        System.out.println("date = " + USER_DATE);
         USER_MONTH = calObject.get(Calendar.MONTH);
-        System.out.println("month = " + USER_MONTH);
         USER_YEAR = calObject.get(Calendar.YEAR);
-        System.out.println(USER_YEAR);
         USER_UNIQUE_MODIFIER = info.getUserID();
-        //USER_CHOICE_DATE = decrypter.getColor1();
-        //USER_CHOICE_MONTH = decrypter.getColor2();
-        //USER_CHOICE_YEAR = decrypter.getColor3();
         USER_FIRST = info.getFirstName();
         USER_SECOND = info.getLastName();
 
@@ -219,8 +218,8 @@ public class Passgen {
         dob = generateUsingDob();
 
         // Generate using name
-        //name = generateUsingName();
-        name = "disabled name for now";
+        name = generateUsingName();
+        //name = "disabled name for now";
 
         // Check strength of both
         strengthName = check.strength(name);
@@ -251,16 +250,17 @@ public class Passgen {
 
         Password password = new Password();
 
+        // Setup all the data to be sent back to the client
         password.setPassword(this.Password);
         password.setOwner(procedure.getOwner());
         password.setId(procedure.getId());
         password.setServiceName(procedure.getServiceName());
+        
+        // Flushing values
+        PARSED_USER_ID = null;
+        USER_PIN = 0;
 
         return password;
-
-
-
-
     }
 
 
@@ -272,6 +272,7 @@ public class Passgen {
         // pojo.Procedure to generate password for Dob
         generatePassword();
 
+        // Set up data to be sent back to the client
         Procedure procedure = new Procedure();
         procedure.setServiceName(service);
         procedure.setOwner(userInfo.getUserID());

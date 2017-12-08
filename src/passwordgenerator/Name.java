@@ -8,7 +8,7 @@ package passwordgenerator;
 public class Name {
     
     // For processing 
-    String SUM, SUM1;
+     String SUM, SUM1;
      private String pass;
      private int sumOfFirstName;
      private int sumOfSecondName;
@@ -38,11 +38,11 @@ public class Name {
 
         // Summing up the first name 
         for(int i = 0 ; i < lengthFirstname ; i++)
-            sumOfFirstName += mod[i] + 13;
+            sumOfFirstName += mod[i];
 
         // Summing up the second name 
         for(int i = 0 ; i < lengthSecondName ; i++)
-            sumOfSecondName += mod1[i] + 5;
+            sumOfSecondName += mod1[i];
     }
 
     // Providing generated name
