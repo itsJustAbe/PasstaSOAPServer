@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e5575e-4a10-41b4-8166-ffc7c0242d24" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/ClientTest.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/ClientTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Dob.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Dob.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Passgen.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/passwordgenerator/Passgen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PasstaSOAPServer/soapserver/ServerImplement.class" afterPath="$PROJECT_DIR$/out/production/PasstaSOAPServer/soapserver/ServerImplement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Dob.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Dob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" afterPath="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soapserver/ServerImplement.java" afterPath="$PROJECT_DIR$/src/soapserver/ServerImplement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,13 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServerImplement.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/soapserver/ServerImplement.java">
+      <file leaf-file-name="Passgen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Passgen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="578">
+              <caret line="226" column="42" lean-forward="true" selection-start-line="226" selection-start-column="42" selection-end-line="226" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1512701860219" expanded="false" signature="26:48" ph="/.../" />
+                <marker date="1512701860219" expanded="true" signature="7622:8202" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,17 +59,17 @@
         <option value="$PROJECT_DIR$/src/passwordgenerator/Name.java" />
         <option value="$PROJECT_DIR$/src/passwordgenerator/Decrypt.java" />
         <option value="$PROJECT_DIR$/src/passwordgenerator/Option5.java" />
-        <option value="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
-        <option value="$PROJECT_DIR$/src/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/passwordgenerator/Encrypt.java" />
+        <option value="$PROJECT_DIR$/src/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/soapserver/ServerImplement.java" />
+        <option value="$PROJECT_DIR$/src/passwordgenerator/Passgen.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="137" />
-    <option name="y" value="-23" />
-    <option name="width" value="1938" />
+    <option name="x" value="-595" />
+    <option name="y" value="-26" />
+    <option name="width" value="1942" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -218,6 +226,20 @@
       <module name="PasstaSOAPServer" />
       <envs />
     </configuration>
+    <configuration name="TestingGround" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestingGround" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PasstaSOAPServer" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -233,17 +255,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.ServerImplement" />
       <item index="2" class="java.lang.String" itemvalue="Application.ClientTest" />
       <item index="3" class="java.lang.String" itemvalue="Application.ClientTest (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestingGround" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.ClientTest (1)" />
         <item index="1" class="java.lang.String" itemvalue="Application.ServerImplement" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ClientTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestingGround" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -274,11 +298,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54479915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -296,7 +320,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ClientTest.java</url>
+          <line>9</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -517,47 +550,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Option5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <marker date="1512688677209" expanded="true" signature="256:1112" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="258:329" ph="//..." />
-            <marker date="1512688677209" expanded="true" signature="852:1112" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="1208:1971" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="2088:2617" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="2689:4954" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="5039:6911" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="7051:8025" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="8134:8943" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="9063:9291" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="9358:11055" ph="{...}" />
-            <marker date="1512688677209" expanded="true" signature="11130:13114" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Dob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <marker date="1512671619448" expanded="true" signature="28:68" ph="/**...*/" />
-            <marker date="1512671619448" expanded="true" signature="254:748" ph="{...}" />
-            <marker date="1512671619448" expanded="true" signature="784:847" ph="{...}" />
-            <marker date="1512671619448" expanded="true" signature="950:1576" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <marker date="1512690688392" expanded="false" signature="7:191" ph="..." />
-            <marker date="1512690688392" expanded="true" signature="284:1364" ph="{...}" />
+            <marker date="1512701047408" expanded="true" signature="28:68" ph="/**...*/" />
+            <marker date="1512701047408" expanded="true" signature="254:636" ph="{...}" />
+            <marker date="1512701047408" expanded="true" signature="1138:1145" ph="{...}" />
+            <marker date="1512701047408" expanded="true" signature="1248:1874" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -641,40 +642,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Passgen.java">
+    <entry file="file://$PROJECT_DIR$/src/TestingGround.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
-            <marker date="1512688732527" expanded="false" signature="26:48" ph="/.../" />
-            <marker date="1512688732527" expanded="false" signature="57:140" ph="..." />
-            <marker date="1512688732527" expanded="true" signature="1679:1820" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="1863:2148" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="2278:2437" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="2545:2793" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="2852:3643" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="3404:3552" ph="//..." />
-            <marker date="1512688732527" expanded="true" signature="3749:4055" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="4144:5348" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="5422:7002" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="5596:5656" ph="//..." />
-            <marker date="1512688732527" expanded="true" signature="7061:7642" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="7713:8254" ph="{...}" />
-            <marker date="1512688732527" expanded="true" signature="7714:7755" ph="//..." />
-            <marker date="1512688732527" expanded="false" signature="8609:8623" ph=" { " />
-            <marker date="1512688732527" expanded="false" signature="8645:8651" ph=" }" />
-            <marker date="1512688732527" expanded="false" signature="8679:8693" ph=" { " />
-            <marker date="1512688732527" expanded="false" signature="8709:8715" ph=" }" />
+            <marker date="1512700942661" expanded="true" signature="67:235" ph="{...}" />
+            <marker date="1512700942661" expanded="true" signature="302:466" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <marker date="1512701577920" expanded="false" signature="7:191" ph="..." />
+            <marker date="1512701577920" expanded="true" signature="284:1364" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soapserver/ServerImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="181">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1512701645507" expanded="true" signature="28:212" ph="..." />
+            <marker date="1512701645507" expanded="true" signature="215:436" ph="@{...}" />
+            <marker date="1512701645507" expanded="true" signature="693:758" ph="{...}" />
+            <marker date="1512701645507" expanded="true" signature="839:906" ph="{...}" />
+            <marker date="1512701645507" expanded="true" signature="975:1034" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Option5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="276" column="75" lean-forward="false" selection-start-line="276" selection-start-column="75" selection-end-line="276" selection-end-column="75" />
+          <folding>
+            <marker date="1512688677209" expanded="true" signature="256:1112" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="258:329" ph="//..." />
+            <marker date="1512688677209" expanded="true" signature="852:1112" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="1208:1971" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="2088:2617" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="2689:4954" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="5039:6911" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="7051:8025" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="8134:8943" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="9063:9291" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="9358:11055" ph="{...}" />
+            <marker date="1512688677209" expanded="true" signature="11130:13114" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordgenerator/Passgen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="226" column="42" lean-forward="true" selection-start-line="226" selection-start-column="42" selection-end-line="226" selection-end-column="42" />
+          <folding>
+            <marker date="1512701860219" expanded="false" signature="26:48" ph="/.../" />
+            <marker date="1512701860219" expanded="true" signature="7622:8202" ph="{...}" />
           </folding>
         </state>
       </provider>

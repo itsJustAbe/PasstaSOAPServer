@@ -27,7 +27,6 @@ public class Passgen {
     Name name = new Name();
     // Password decryptor
     Decrypt decrypter = new Decrypt();
-
     // Encryption class duh
     Encrypt encrypt = new Encrypt();
 
@@ -44,15 +43,13 @@ public class Passgen {
     private int USER_CHOICE_2 = 4;
     private int sumOfFirstName;
     private int sumOfSecondName;
+    private String USER_UNIQUE_MODIFIER;
 
     // Data to be used by Decrypt and Encrypt
      static String PARSED_USER_ID;
      static int USER_PIN;
 
-    // Sample  ofunique identfier recived from database
-    private String USER_UNIQUE_MODIFIER = "5a281b2388a7675aed00fb55";
-
-    // Sample of encrypted password
+    // Items to be sent back
     private String encryptedPassword;
     private String Password;
 
@@ -105,6 +102,34 @@ public class Passgen {
 
     }
 
+
+    // Choosing the Best password generated amonsgt both of them
+    private String pickBestOne(int strengthDob,int strengthName,String name, String dob){
+        String temp = null;
+
+        // if strength of name is greater than strength of DOB
+        if (strengthName > strengthDob) { // encrypt
+            temp = encrypt.encryptName(name, sumOfFirstName, sumOfSecondName, USER_CHOICE_1, USER_CHOICE_2,
+                    USER_PIN, PARSED_USER_ID);
+            Password = name;
+        }
+
+        // Update values till Dob password is better 
+        else if (strengthName == strengthDob && strengthName > 50) {
+            increaseDob();
+            generatePassword();
+        } 
+        
+        // Default case just encrypt DOB.
+        else { 
+            temp = encrypt.encryptDOB(dob, USER_DATE, USER_MONTH, USER_YEAR, USER_CHOICE_DATE,
+                    USER_CHOICE_MONTH, USER_CHOICE_YEAR, USER_PIN, PARSED_USER_ID);
+            Password = dob;
+        }
+
+        return temp;
+    }
+
     private void updateValues(User info, String service) {
 
         // Calender Object to translate Date of birth
@@ -137,11 +162,17 @@ public class Passgen {
         sumOfFirstName = name.getSumOfFirstName();
         sumOfSecondName = name.getSumOfSecondName();
 
+        System.out.println("sum of first number in Passgen = " + sumOfFirstName);
+        System.out.println("sum of second number in Passgen = " + sumOfSecondName);
+
         return passwordName;
     }
 
     // Parsing unique id of the user to pin and IMEI
     private void uniqueIdParser() {
+        /*
+        *we need to do some string manipulationhence stringbuilders
+        */
         StringBuilder idReceived = new StringBuilder(USER_UNIQUE_MODIFIER);
         StringBuilder uniqueIdentifier = new StringBuilder();
 
@@ -151,20 +182,27 @@ public class Passgen {
                 uniqueIdentifier.append(idReceived.charAt(i));
 
         // if the length is shorter than 15
+        // Then add padding as digit 6 
         if (uniqueIdentifier.length() < LENGTH_UID) {
             while (uniqueIdentifier.length() < LENGTH_UID)
                 uniqueIdentifier.append("6");
             PARSED_USER_ID = new String(uniqueIdentifier);
-        } else if (uniqueIdentifier.length() > LENGTH_UID) {
-            // converting string builder to a string and then using the range to pull our
+        } 
+        // if length of parsed string is more than the maximum acceptable length
+        // Then take out the substring by using range provided
+
+        else if (uniqueIdentifier.length() > LENGTH_UID) {
             PARSED_USER_ID = uniqueIdentifier.substring(MIN_RANGE_UID, MAX_RANGE_UID);
-        } else
+        } 
+        
+        // If there is no problem then just use the parsed string as it is.
+        else
             PARSED_USER_ID = new String(uniqueIdentifier);
 
         // Set PIN and UniqueIdentfier
         USER_PIN = Integer.valueOf(uniqueIdentifier.substring(MIN_RANGE_PIN, MAX_RANGE_PIN));
 
-
+        // test print remove before deployment 
         System.out.println("ID Parsed = " + uniqueIdentifier);
         System.out.println("pin Parsed = " + USER_PIN);
 
@@ -175,8 +213,7 @@ public class Passgen {
 
         // variables
         String name, dob;
-
-        int strengthName, strengthDob;
+         int strengthName, strengthDob;
 
         // Generate  password using Dob
         dob = generateUsingDob();
@@ -189,27 +226,9 @@ public class Passgen {
         strengthName = check.strength(name);
         strengthDob = check.strength(dob);
 
-        if (strengthName > strengthDob) { // encrypt
-            encryptedPassword = encrypt.encryptName(name, sumOfFirstName,sumOfSecondName, USER_CHOICE_1, USER_CHOICE_2, 
-                    USER_PIN, PARSED_USER_ID);
-            Password = name;
-            System.out.println("Generated pojo.Password = " + name);
-            System.out.println("Encrypted NAME password  = " + encryptedPassword);
-
-        }
-
-        // Update values till Dob password is better 
-        else if (strengthName == strengthDob && strengthName > 50) {
-            increaseDob();
-            generatePassword();
-        } else { // Encrypt DOb
-            encryptedPassword = encrypt.encryptDOB(dob, USER_DATE, USER_MONTH, USER_YEAR, USER_CHOICE_DATE,
-                    USER_CHOICE_MONTH, USER_CHOICE_YEAR, USER_PIN,PARSED_USER_ID);
-            Password = dob;
-            System.out.println("Generated pojo.Password = " + dob);
-            System.out.println("Encrypted DOB password  = " + encryptedPassword);
-        }
-
+        // Using the Strength pick the best password to be used 
+        encryptedPassword = pickBestOne(strengthDob,strengthName,name,dob);
+        
         // Display
         System.out.println("Strength of password dob = " + strengthDob);
         System.out.println("Strength of password name = " + strengthName);
@@ -217,6 +236,7 @@ public class Passgen {
     }
 
     public Password decryptPassword(Procedure procedure) {
+       
         // parse the acquired user ID
         uniqueIdParser();
 

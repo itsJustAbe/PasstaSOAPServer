@@ -11,8 +11,8 @@ import javax.xml.ws.Endpoint;
 
 
 @WebService(name= "PasswordGenerationServer",
-        serviceName = "PasswordGenerationServer",
-        targetNamespace = "http://soapservice" )
+        serviceName = "PasswordGenerationServer")
+       // targetNamespace = "http://soapservice/" )
 @SOAPBinding(style = SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
 public class ServerImplement implements PasswordGenerationServer {
 
