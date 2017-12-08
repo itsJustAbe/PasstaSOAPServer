@@ -166,6 +166,10 @@ public class Passgen {
 
         // getting parsed digits for choice
         pick = chooseOne(temp);
+        
+        // HAve atleast 1 word in password
+        if( pick[0] != 4 && pick[1] != 4 && pick[2] != 4) pick[1] = 4;
+        
 
         // Updating values
         USER_CHOICE_DATE = pick[0];
