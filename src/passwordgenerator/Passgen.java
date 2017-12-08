@@ -278,8 +278,8 @@ public class Passgen {
         dob = generateUsingDob();
 
         // Generate using name
-        name = generateUsingName();
-        //name = "disabled name for now";
+        //name = generateUsingName();
+        name = "disabled name for now";
 
         // Check strength of both
         strengthName = check.strength(name);
